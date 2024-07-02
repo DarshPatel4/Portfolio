@@ -1,0 +1,88 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ECF0F1;
+    color: #2C3E50;
+}
+
+.navbar {
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #3498DB, #2C3E50);
+    color: white;
+    padding: 100px 0;
+    margin-bottom: 30px;
+}
+
+.hero-title {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    animation: fadeIn 2s ease-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    animation: fadeIn 2s ease-out 0.5s;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3498DB;
+    animation: slideIn 1s ease-out;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-text, .education-list, .achievements-list, .contact-list {
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.project-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.contact-list, .achievements-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li, .achievements-list li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
