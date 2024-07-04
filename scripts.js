@@ -11,4 +11,10 @@ $(document).ready(function(){
             });
         }
     });
+
+    // Modal functionality for larger image view
+    $('.achievement-image').on('click', function() {
+        const imageSrc = $(this).data('image');
+        $('#modalImage').attr('src', imageSrc);
+    });
 });

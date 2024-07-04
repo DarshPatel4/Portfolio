@@ -36,8 +36,8 @@
         <h2 class="section-title">Education</h2>
         <p class="section-text">I am currently pursuing a Bachelor of Technology (BTech) degree at Charotar University of Science and Technology, Changa, Anand.</p>
         <ul class="education-list">
-            <li>PARTH SCHOOL, VADODARA (2020-2022)</li>
-            <li>CHARUSAT UNIVERSITY (2022-2026) - 8.49/10 CGPA</li>
+            <p>PARTH SCHOOL, VADODARA (2020-2022)</p>
+            <p>CHARUSAT UNIVERSITY (2022-2026) - 8.63/10 CGPA</p>
         </ul>
     </section>
 
@@ -46,18 +46,21 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="project-card">
+                    <img src="images/railway-ticket-system.png" alt="Railway Ticket Management System" class="project-image">
                     <h3>RAILWAY TICKET MANAGEMENT SYSTEM</h3>
                     <p>Developed a railway ticket booking system in C++ in 2nd semester. Utilized OOP principles for modular design and code reusability.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="project-card">
+                    <img src="images/car-website.jpg" alt="Car Website (Gaadidekho)" class="project-image">
                     <h3>CAR WEBSITE (GAADIDEKHO)</h3>
                     <p>Developed a car website using HTML, CSS, JS, Python in 3rd semester. Implemented interactive features for viewing cars and their specifications.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="project-card">
+                    <img src="images/employee-management-system.jpg" alt="Employee Management System" class="project-image">
                     <h3>EMPLOYEE MANAGEMENT SYSTEM (Currently working)</h3>
                     <p>Developed an employee management website using HTML, CSS, JS, Python in 4th semester. Features for viewing details, attendance, leave status, and HR management.</p>
                 </div>
@@ -67,11 +70,26 @@
 
     <section id="achievements" class="container mt-5">
         <h2 class="section-title">Achievements</h2>
-        <ul class="achievements-list">
-            <li>Fundamentals of Red Hat Enterprise Linux 9 certified.</li>
-            <li>Secured Elite 65% in IIT-KGP NPTEL Exam on Data Structure and Algorithms Using Java.</li>
-            <li>Secured Elite 65% in IIT-KGP NPTEL Exam on Database Management System.</li>
-        </ul>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <img src="images/red-hat-cert.jpg" alt="Red Hat Certificate" class="achievement-image" data-toggle="modal" data-target="#imageModal" data-image="images/red-hat-cert.jpg">
+                    <h3>Fundamentals of Red Hat Enterprise Linux 9</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <img src="images/iit-kgp-dsa.jpg" alt="IIT-KGP DSA Certificate" class="achievement-image" data-toggle="modal" data-target="#imageModal" data-image="images/iit-kgp-dsa.jpg">
+                    <h3>Data Structure and Algorithms Using Java</h3>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <img src="images/iit-kgp-dbms.jpg" alt="IIT-KGP DBMS Certificate" class="achievement-image" data-toggle="modal" data-target="#imageModal" data-image="images/iit-kgp-dbms.jpg">
+                    <h3>Database Management System</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="contact" class="container mt-5">
@@ -88,6 +106,23 @@
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Darsh Patel. All rights reserved.</p>
     </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Certificate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Certificate" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
